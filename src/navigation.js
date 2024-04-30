@@ -1,7 +1,7 @@
 import React from "react";
 import './App.css';
 
-function Navigation({handleSearch, handleSubmit, addAmount, addDescription, date, handleDate, amount, description}) {
+function Navigation({handleSearch, handleSubmit, addAmount, addDescription, addDate, amount, description}) {
     return (
         <>
         <header>
@@ -17,12 +17,6 @@ function Navigation({handleSearch, handleSubmit, addAmount, addDescription, date
         </div>
         <div className="addTransaction">
             <form onSubmit={handleSubmit}>
-                <label>Date</label>
-                <DatePicker 
-                    selected={date}
-                    value={date} 
-                    onChange={handleDate}
-                />
                 <input onChange={addDescription}type="text" value={description} placeholder="Description" />
                 <input onChange={addDate} type="number" value={Date} placeholder="Date" />
                 <input onChange={addAmount} type="text" value={amount} placeholder="Amount" />

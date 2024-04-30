@@ -1,38 +1,72 @@
 .App {
   text-align: center;
+  margin: auto;
+  width: 95%;
+  height: 500px;
+  border-color: aqua;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+header{
+  background: #4614A7;
+  margin-top: 5px;
+  height: 8cqb;
+  
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header h1 {
+  color: #fff;
+  font-size: 20px;
+  padding-top: 20px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.nav {
+  width: 95%;
+  margin: auto;
+}
+.nav form{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
+}
+#search input{
+  width: 100%;
+  height: 30px;
+}
+.addTransaction{
+  border: 2px solid #d8d8d8;
+  margin-top: 20px;
+}
+.addTransaction form{
+  margin: 20px;
+  display: flex;
+}
+.addTransaction form input{
+  margin:  0px 10px;
+}
+#btn{
+  margin: 20px 0px;
+}
+#btn button{
+  font-size: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.transactionList {
+  margin: 20px 0px;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+table{
+  border: 1px solid #d8d8d8;
+  border-collapse: collapse;
+  width: 100%;
+  text-align: center;
+}
+table th{
+  padding: 8px;
+  font-size: 20px;
+}
+table tr{
+  border-bottom: 1px;
+  background-color: #ece6f9;
+  color: #333334;
+  height: 20px;
+  margin-bottom: 5px;
+  border-bottom: 4px solid #fff;
+}
+table tr th, table tr td{
+  padding: 12px;
 }
